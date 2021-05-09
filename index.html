@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Alfa Slab One|Calistoga' rel='stylesheet'>
+    <link rel="stylesheet" href="css/estilo.css"
+    
+</head>
+
+<body>
+    <header>
+        <h1>OVER<span>DOG</span>
+            <button id="enviar">ENVIAR</button>
+        </h1>
+    </header>
+    <div class="conteudo" id="conteudo">
+        <!--<h2>Salsicha na Chapa <span>HOTDOG</span></h2>-->
+        <div class="item-produto">
+            <div class="produto">
+                <div class="cod-produto">
+                    01
+                </div>
+                <div class="valor-produto">
+                    R$ 10.0
+                </div>
+                <span class="desc-produto">
+                    Pão, Salsicha, ...
+                </span>
+
+            </div>
+            <div class="add-produto">
+                <span class="valor-parcial">
+                    R$ 0.0 (x0)
+                </span>
+                <span class="botoes">
+                    <button class="bt-mais">+</button>
+                    <button class="bt-menos">-</button>
+                </span>
+            </div>
+        </div>
+
+
+        <!--<h2>ADICIONAIS</h2>-->
+        <div class="adicionais">
+            <div class="valor-produto">
+                R$ 10.0
+            </div>
+            <span class="desc-produto">
+                COMBO Batata+Refri
+            </span>
+
+        </div>
+    </div>
+    
+<div id="modal-enviar">
+    <div class="titulo-modal">
+        PEDIDO
+        <span class ="Close" id = "fechar-modal">&times;</span>
+    </div>
+    <div class="corpo-modal">
+        Escolha ao menos um produto.      
+    </div>
+    <div class="rodape-modal"id= "rodape-modal">   
+         
+    </div>
+</div>
+
+<script src="js/itens.js"></script>
+<script src="js/index.js"></script>
+</body>
+
+</html>

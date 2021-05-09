@@ -1,0 +1,279 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    margin-bottom: 100px;
+    z-index: 1;
+
+}
+
+h1 {
+    background-color: #ffd900;
+    color: black;
+    font-family: "Alfa Slab One";
+    font-size: 32px;
+    letter-spacing: 5px;
+    padding-left: 12%;
+    border-bottom: solid black 3px;
+
+}
+
+h1 span {
+    background-color: black;
+    color: #ffd900;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#enviar {
+    background-color: black;
+    color: yellow;
+    position: fixed;
+    right: 12%;
+    top: 5px;
+    font-family: "Alfa Slab One";
+    font-size: 22px;
+    letter-spacing: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.conteudo {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 50px;
+}
+
+h2 {
+    margin-top: 4px;
+    border-left: solid orange 3px;
+    border-bottom: solid orange 3px;
+    padding-left: 3px;
+    font-size: 16px;
+    font-family: Calistoga;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+h2 span {
+    font-size: 10px;
+    position: absolute;
+    right: 2px;
+
+}
+
+.produto {
+    background-color: #fff4b2;
+    position: relative;
+    height: 67px;
+    margin-top: 6px;
+    cursor: pointer;
+
+}
+
+.produto .cod-produto {
+
+    position: absolute;
+    background-color: black;
+    color: #ffd900;
+    width: 20%;
+    font-family: "Alfa Slab One";
+    text-align: center;
+    font-size: 27px;
+    padding-top: 4px;
+    padding-bottom: 9px;
+}
+
+.produto .valor-produto {
+    top: 50px;
+    position: absolute;
+    background-color: #ffd900;
+    color: black;
+    width: 20%;
+    font-family: "Alfa Slab One";
+    text-align: center;
+    font-size: 12px;
+}
+
+.produto .desc-produto {
+    margin-left: 20.5%;
+    display: inline-block;
+    font-size: 15px;
+
+}
+
+.adicionais {
+    background-color: #fff4b2;
+    position: relative;
+    height: 22px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.adicionais .valor-produto {
+    position: absolute;
+    background-color: black;
+    color: #ffd900;
+    font-family: "Alfa Slab One";
+    width: 20%;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.adicionais .desc-produto {
+    padding-left: 20.5%;
+}
+
+.add-produto {
+    height: 23px;
+    background-color: #8080806E;
+    position: relative;
+    text-align: center;
+    font-family: "Alfa Slab One";
+    display: none;
+
+}
+
+.botoes {
+    position: absolute;
+    right: 0px;
+    top: -8px
+}
+
+.botoes button {
+    width: 25px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+.bt-mais {
+    background-color: #ffd900;
+    color: black;
+    width: 20%;
+    font-family: "Alfa Slab One";
+}
+
+.bt-menos {
+    background-color: black;
+    color: #ffd900;
+    width: 20%;
+    font-family: "Alfa Slab One";
+}
+
+@media only screen and (max-width: 500px) {
+    #enviar {
+        bottom: 0px;
+        left: 0px;
+        top: 93%;
+        width: 100%;
+    }
+
+    h1 {
+        padding-left: 2%;
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+    .conteudo {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .adicionais .valor-produto {
+        width: 33%;
+    }
+
+    .adicionais .desc-produto {
+        padding-left: 33.5%;
+    }
+
+}
+td span{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 0px 4px 4px 4px;
+    margin: 0px;
+    cursor: pointer;
+    margin-left: 4px;
+    border-radius: 5px;
+}
+#modal-enviar{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(200, 289, 224, 0.5);
+    z-index: 1;
+    left: 0;
+    top: 0;
+    padding-top: 100px;
+}
+.titulo-modal{
+      
+      background-color:#ffd900;
+      width: 75%;
+      margin: auto;
+      padding: 15px;  
+      position: relative;  
+      cursor: pointer; 
+      
+}
+.titulo-modal span{
+    position: absolute;
+    right: 15px;
+    color: red;
+    font-size: 40px;
+    top: 0px;
+
+}
+.corpo-modal{
+      
+    background-color:white;
+    width: 75%;
+    margin: auto;
+    padding: 15px;  
+    position: relative;   
+}
+.rodape-modal{
+
+    background-color: #ffd900;
+    width: 75%;
+    margin: auto;
+    padding: 15px;
+    position: relative; 
+}
+#complemento-envio input{
+    width: 80%;
+    padding: 2px;
+    margin: 2px;
+}
+    #complemento-envio span{
+        width: 80%;
+        padding: 2px;
+        margin: 2px;
+        display: block;
+        font-size: 12px;
+    }
+    .rodape-modal button{
+        position: absolute;
+        background-color: black;
+        color: yellow;
+        right: 5px;
+        bottom: 5px;
+        border: none;
+        padding: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+        cursor: pointer;
+
+    }
